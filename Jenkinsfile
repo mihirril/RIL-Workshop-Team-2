@@ -11,6 +11,7 @@ node {
       scannerHome = tool 'sonar_scanner';
    }
 
+   
    stage('Build') {
       sh "'${mvnHome}/bin/mvn' -Dmaven.test.failure.ignore clean package"
         
